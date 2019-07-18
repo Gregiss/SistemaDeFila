@@ -19,7 +19,6 @@ public class Fila extends javax.swing.JFrame {
      */
     
     private List<String> fila;
-    public String anterior = "";
     
     public Fila() {
         initComponents();
@@ -113,7 +112,6 @@ public class Fila extends javax.swing.JFrame {
         String nome = "";
         int total = this.fila.size();
         if(total > 0){ 
-            this.anterior = nome;
             nome = this.fila.get(0);
             this.fila.remove(0);   
             labelChamada.setText(""+nome);
